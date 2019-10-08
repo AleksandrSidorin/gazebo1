@@ -10,8 +10,8 @@ Aims:
 - Learning how to model robots
 
 In order to launch my robot Manipulator:
-1 Open the terminal
-2 Print "cd"your workspace"/src/
-3 Print "git clone https://github.com/AleksandrSidorin/FRP1"
-4 Print "catkin_make"
-5 Print "roslaunch gazebo1 gazebo.launch"
+- Open the terminal
+- Print "cd"your workspace"/src/
+- Print "git clone https://github.com/AleksandrSidorin/FRP1"
+- Print "catkin_make"
+- Print "roslaunch gazebo1 gazebo.launch"
