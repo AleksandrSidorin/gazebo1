@@ -18,7 +18,7 @@ In order to launch my robot Manipulator:
 
 ![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
 
-![Image alt](https://github.com/{AleksandrSidorin}/{https://github.com/AleksandrSidorin/gazebo1}/raw/{Robot.png}/{https://github.com/AleksandrSidorin/gazebo1/blob/master/Robot.png}/image.png)
+![Image alt](https://github.com/{AleksandrSidorin}/{gazebo1}/raw/{robot.png}/{https://github.com/AleksandrSidorin/gazebo1/blob/master/Robot.png}/image.png)
 
 {username} — ваш ник на ГитХабе;
 {repository} — репозиторий где хранятся картинки;
