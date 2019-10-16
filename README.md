@@ -16,3 +16,11 @@ In order to launch my robot Manipulator:
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
 
+![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
+
+![Image alt](https://github.com/{AleksandrSidorin}/{https://github.com/AleksandrSidorin/gazebo1}/raw/{Robot.png}/{https://github.com/AleksandrSidorin/gazebo1/blob/master/Robot.png}/image.png)
+
+{username} — ваш ник на ГитХабе;
+{repository} — репозиторий где хранятся картинки;
+{branch} — ветка репозитория;
+{path} — путь к месту нахождения картинки.
