@@ -1,4 +1,4 @@
-Home Work 1 FRP
+AS 1 FRP
 Modeling the robot Manipulator
 
 Description:
@@ -12,6 +12,7 @@ Aims:
 In order to launch my robot Manipulator:
 - Open the terminal
 - Print "cd"your workspace"/src/
-- Print "git clone https://github.com/AleksandrSidorin/FRP1"
+- Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
+
