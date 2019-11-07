@@ -22,7 +22,7 @@ AS 2 FRP
 Creating robot movements
 
 Description:
-In this task i continue to work with my Manipulator. 
+In this task I continue to work with my Manipulator. 
 
 Aims:
 - Make all appropriate joints to move
@@ -38,9 +38,10 @@ In order to launch and move my robot Manipulator:
 You should see the Robot in Gazebo, next steps:
 - Open the new terminal
 - Print "cd"your workspace"/src/
-- Print ""
-- Print ""
-- Print ""
+- Print "source devel/setup.bash"
+- Print "rosrun gazebo1 scriptmove.py"
+
+Now you see how Rpbot moves
 
 Link to the video on YouTube:
-This 
+https://www.youtube.com/watch?v=olq_p5Wzfz4

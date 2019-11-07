@@ -25,7 +25,7 @@
           </inertial>  
     </link>
     
-  <joint name="base_link_link_01" type="revolute">
+  <joint name="base_link_link_01" type="prismatic">
     <axis xyz="0 0 1"/>
       <limit effort= "1000.0" lower="0" upper="0.5" velocity="0.5"/> 
         <origin rpy="0 0 0" xyz="0 0 0.5"/>
@@ -50,7 +50,7 @@
          </inertial>
    </link>
 
- <joint name="link01_link_02" type="fixed">
+ <joint name="link01_link_02" type="revolute">
    <axis xyz="0 1 0"/>
      <limit effort= "1000.0" lower="-1.04" upper="1.04" velocity="0.5"/>
        <origin rpy="0 0 0" xyz="0 0 1"/>
@@ -75,7 +75,7 @@
        </inertial> 
  </link>
 
- <joint name="link02_link_03" type="fixed">
+ <joint name="link02_link_03" type="revolute">
    <axis xyz="1 0 0"/>
      <limit effort= "1000.0" lower="-0.5" upper="0.5" velocity="0.5"/>
        <origin rpy="0 0 0" xyz="0 0 1.5"/>
@@ -101,7 +101,7 @@
        </inertial>  
  </link>
       
- <joint name="link03_link_04" type="fixed">
+ <joint name="link03_link_04" type="prismatic">
    <axis xyz="0 0 1"/>
      <limit effort= "1000.0" lower="-0.5" upper="0" velocity="0.5"/>
        <origin rpy="0 0 0" xyz="0 0 0.5"/>
@@ -126,8 +126,6 @@
               </inertial>  
  </link>
 
-
-
 <transmission name="tran1">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="base_link_link_01">
@@ -138,6 +136,43 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
+
+
+<transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="link01_link_02">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+<transmission name="tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="link02_link_03">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor3">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+<transmission name="tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="link03_link_04">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor4">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
 
 
 <gazebo>
