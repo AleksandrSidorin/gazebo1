@@ -16,5 +16,7 @@
   output="screen" ns="/MYROBOT" args="joint_state_controller joint1_position_controller joint2_position_controller joint3_position_controller joint4_position_controller"/>
 
 
+
+
 </launch>
 
