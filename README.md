@@ -44,4 +44,4 @@ You should see the Robot in Gazebo, next steps:
 Now you see how Rpbot moves
 
 Link to the video on YouTube:
-https://www.youtube.com/watch?v=olq_p5Wzfz4
+https://youtu.be/Ck_fy_Z6fno
