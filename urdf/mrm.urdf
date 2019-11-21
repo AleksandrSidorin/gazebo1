@@ -52,7 +52,7 @@
 
  <joint name="link01_link_02" type="revolute">
    <axis xyz="0 1 0"/>
-     <limit effort= "1000.0" lower="-1.04" upper="1.04" velocity="0.5"/>
+     <limit effort= "1000.0" lower="-0.35" upper="0.35" velocity="0.6"/>
        <origin rpy="0 0 0" xyz="0 0 1"/>
          <parent link="link_01"/>
          <child link="link_02"/>
@@ -76,8 +76,8 @@
  </link>
 
  <joint name="link02_link_03" type="revolute">
-   <axis xyz="1 0 0"/>
-     <limit effort= "1000.0" lower="-0.5" upper="0.5" velocity="0.5"/>
+   <axis xyz="0 1 0"/>
+     <limit effort= "1000.0" lower="-0.3" upper="0.3" velocity="0.6"/>
        <origin rpy="0 0 0" xyz="0 0 1.5"/>
          <parent link="link_02"/>
          <child link="link_03"/>
@@ -125,6 +125,81 @@
                  izz="0.01" />
               </inertial>  
  </link>
+
+
+<link name="camera">
+    <collision>
+     <origin rpy="0 0 0" xyz="0 0 0"/>
+       <geometry>
+         <box size="0.08 0.08 0.08"/>
+       </geometry>
+     </collision>
+
+     <visual>
+<origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+         <box size="0.08 0.08 0.08"/>
+       </geometry>
+      </visual>
+
+       <inertial>
+         <mass value="0.01"/> 
+     <origin rpy="0 0 0" xyz="0 0 0"/>
+<box_inertia m="0.01" x="0.05" y="0.05" z="0.05"/>
+           <inertia ixx="0.001" ixy="0.0" ixz="0.0"
+                    iyy="0.001" iyz="0.0" 
+                    izz="0.001" />
+
+       </inertial>  
+ </link>
+      
+ <joint name="camera_joint" type="fixed">
+   <axis xyz="0 1 0"/>
+       <origin rpy="0 0 0" xyz=".53 0 0"/>
+         <parent link="link_04"/>
+         <child link="camera"/>
+ </joint>
+
+  <gazebo reference="camera">
+    <sensor type="camera" name="camera1">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>TAKEPIC/camera1</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+
 
 <transmission name="tran1">
     <type>transmission_interface/SimpleTransmission</type>
@@ -174,12 +249,12 @@
   </transmission>
 
 
-
 <gazebo>
   <plugin name="my_robot_controll" filename="libgazebo_ros_control.so">
     <robotNamespace>/MYROBOT</robotNamespace>
   </plugin>
 </gazebo>
 
- 
+
+
 </robot>

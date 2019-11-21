@@ -45,3 +45,39 @@ Now you see how Rpbot moves
 
 Link to the video on YouTube:
 https://youtu.be/Ck_fy_Z6fno
+
+
+AS 3 FRP
+Sensors
+
+Description:
+In this task I continue to work with my Manipulator. 
+
+Aims:
+- Add a camera sensor to one movable link
+- Create a Python script that moves link with a camera
+- Create a Python script that takes pictures
+- Make video 
+
+In order to launch my robot Manipulator and get pictures:
+- Open the terminal
+- Print "cd"your workspace"/src/
+- Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
+- Print "catkin_make"
+- Print "roslaunch gazebo1 gazebo.launch"
+You should see the Robot in Gazebo, next steps:
+- Open the new terminal
+- Print "cd"your workspace"/src/
+- Print "source devel/setup.bash"
+- Print "rosrun gazebo1 scriptmovecamera.py"
+Now link with the camera are movung, next steps:
+- Open the new terminal
+- Print "cd"your workspace"/src/
+- Print "source devel/setup.bash"
+- Print "rosrun gazebo1 scriptakepic.py"
+
+Now we have pictures in folder "Pictures"
+
+Link to the video on YouTube:
+https://youtu.be/ghjpqJtXvy0
+
