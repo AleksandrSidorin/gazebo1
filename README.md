@@ -90,7 +90,6 @@ Aims:
 - Implement a function that makes useful calculations (FK)
 - Implement unit - tests that validate FK
 - Implement intagtation test
-- Make video
 
 In order to launch Unit test:
 - Open the terminal
@@ -107,8 +106,5 @@ In order to launch Integ test:
 - Print "source devel/setup.bash"
 - Print "roslaunch gazebo1 testik.launch "
 Now there is written which links done test and which not
-
-Link to the video on YouTube:
-https://youtu.be/ghjpqJtXvy0
 
 
