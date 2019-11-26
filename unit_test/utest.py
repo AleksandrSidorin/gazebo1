@@ -1,14 +1,14 @@
 #!/usr/bin/env python
-import unittest
-import numpy as np
+#import unittest
+#import numpy as np
 
-def Tz(z):
+#def Tz(z):
     Tz = np.array([ [1,0,0,0],
                     [0,1,0,0],
                     [0,0,1,z],
                     [0,0,0,1]])
     return Tz
-def Ry(q):
+#def Ry(q):
     Rz = np.array([ [np.cos(q),    0,      np.sin(q), 0],
                     [0,            1,      0,         0],
                     [-np.sin(q),   0,      np.cos(q), 0],
@@ -26,7 +26,7 @@ class Test(unittest.TestCase):
     d2 = 0.5
     c = np.array([[0.958851],[0], [8.25516512]])
     self.assertEqual(np.sum((FK(d1, q1, q2, d2)- c) < 0.001), 3)
-if __name__ == '__main__':
+#if __name__ == '__main__':
   unittest.main()
 
 
