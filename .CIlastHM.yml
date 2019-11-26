@@ -1,0 +1,4 @@
+language: python
+python:
+  - "2.5"
+script: unit_test/utest.py
