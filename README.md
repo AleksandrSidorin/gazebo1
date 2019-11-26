@@ -113,7 +113,7 @@ https://youtu.be/ghjpqJtXvy0
 
 AS 5 FRP
 Last home work
-[![Build Status](https://travis-ci.org/AleksandrSidorin/gazebo1.svg?branch=WorkCI)](https://travis-ci.org/AleksandrSidorin/gazebo1):
+[![Build Status](https://travis-ci.org/AleksandrSidorin/gazebo1.svg?branch=workCI)](https://travis-ci.org/AleksandrSidorin/gazebo1):
 
 
 
