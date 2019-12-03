@@ -1,4 +1,4 @@
 language: python
-pythonn:
+python:
   - "2.7.15"
 script: unit_test/utest.py
