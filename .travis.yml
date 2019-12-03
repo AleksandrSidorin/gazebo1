@@ -1,0 +1,4 @@
+language: python
+pythonn:
+  - "2.7.15"
+script: unit_test/utest.py
