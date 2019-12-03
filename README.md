@@ -46,6 +46,7 @@ Now you see how Rpbot moves
 Link to the video on YouTube:
 https://youtu.be/Ck_fy_Z6fno
 
+
 AS 3 FRP
 Sensors
 
@@ -80,6 +81,7 @@ Now we have pictures in folder "Pictures"
 Link to the video on YouTube:
 https://youtu.be/ghjpqJtXvy0
 
+
 AS 4 FRP
 Testing
 
@@ -106,6 +108,3 @@ In order to launch Integ test:
 - Print "source devel/setup.bash"
 - Print "roslaunch gazebo1 testik.launch "
 Now there is written which links done test and which not
-
-
-
