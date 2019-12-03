@@ -81,3 +81,30 @@ Now we have pictures in folder "Pictures"
 Link to the video on YouTube:
 https://youtu.be/ghjpqJtXvy0
 
+
+AS 4 FRP
+Testing
+
+Description:
+In this task I continue to work with my Manipulator. 
+
+Aims:
+- Implement a function that makes useful calculations (FK)
+- Implement unit - tests that validate FK
+- Implement intagtation test
+
+In order to launch Unit test:
+- Open the terminal
+- Print "cd"your workspace"/src/
+- Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
+- Print "catkin_make"
+- Print "cd gazebo1/unit_test/"
+- Print "python utest.py"
+Now there is written OK (Test Done)
+In order to launch Integ test:
+- Open the new terminal
+- Print "cd"your workspace"/src/
+- Print "catkin make"
+- Print "source devel/setup.bash"
+- Print "roslaunch gazebo1 testik.launch "
+Now there is written which links done test and which not

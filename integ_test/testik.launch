@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  </include>
+
+  <param name="robot_description" command="cat $(find gazebo1)/urdf/mrm.urdf"/>
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" 
+    args="-urdf -model myrobot -param robot_description -z 1">
+  </node>
+
+
+<rosparam file="$(find gazebo1)/controller/my_robot_control.yaml" command="load"/>
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  output="screen" ns="/MYROBOT" args="joint_state_controller joint1_position_controller joint2_position_controller joint3_position_controller joint4_position_controller"/>
+
+  <node name="publisher" pkg="gazebo1" type="publer.py" output="screen"/>
+  <node name="subscriber" pkg="gazebo1" type="subsc.py" output="screen"/>
+
+</launch>
+
