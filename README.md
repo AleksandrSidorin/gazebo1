@@ -143,8 +143,10 @@ Let's move link and check again:
 - Print "catkin make"
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 publer.py"
+
 Now we see link chenged position 
 - Print "roslaunch gazebo1 testik.launch "
+
 Now there is written Joint is located right
 
 
