@@ -70,7 +70,7 @@ You should see the Robot in Gazebo, next steps:
 - Print "cd"your workspace"/src/
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptmovecamera.py"
-Now link with the camera are movung, next steps:
+Now link with the camera is moving, next steps:
 - Open the new terminal
 - Print "cd"your workspace"/src/
 - Print "source devel/setup.bash"
