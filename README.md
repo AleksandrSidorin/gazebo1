@@ -41,7 +41,7 @@ You should see the Robot in Gazebo, next steps:
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptmove.py"
 
-Now you see how Rpbot moves
+Now you see how Robot moves
 
 Link to the video on YouTube:
 https://youtu.be/Ck_fy_Z6fno
