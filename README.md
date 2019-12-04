@@ -11,7 +11,7 @@ Aims:
 
 In order to launch my robot Manipulator:
 - Open the terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
@@ -31,17 +31,17 @@ Aims:
 
 In order to launch and move my robot Manipulator:
 - Open the terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
 You should see the Robot in Gazebo, next steps:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptmove.py"
 
-Now you see how Rpbot moves
+Now you see how Robot moves
 
 Link to the video on YouTube:
 https://youtu.be/Ck_fy_Z6fno
@@ -66,12 +66,12 @@ In order to launch my robot Manipulator and get pictures:
 - Print "roslaunch gazebo1 gazebo.launch"
 You should see the Robot in Gazebo, next steps:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptmovecamera.py"
-Now link with the camera are movung, next steps:
+Now link with the camera are moving, next steps:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptakepic.py"
 
@@ -94,7 +94,7 @@ Aims:
 
 In order to launch Unit test:
 - Open the terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "cd gazebo1/unit_test/"
@@ -102,18 +102,48 @@ In order to launch Unit test:
 Now there is written OK (Test Done)
 In order to launch Integ test:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "catkin make"
 - Print "source devel/setup.bash"
 - Print "roslaunch gazebo1 testik.launch "
 Now there is written which links done test and which not
 
-Link to the video on YouTube:
-https://youtu.be/ghjpqJtXvy0
 
 AS 5 FRP
 Last home work
 [![Build Status](https://travis-ci.org/AleksandrSidorin/gazebo1.svg?branch=master)](https://travis-ci.org/AleksandrSidorin/gazebo1):
 
+Exam
+
+Task:
+On exam I continue to work with my Manipulator. 
+
+Aims:
+- Move 1 link on 1 rad
+- Create scripts that check if link in right position
+
+In order to check:
+- Open the terminal
+- Print "cd"your workspace"/src/
+- Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
+- Print "catkin_make"
+- Print "roslaunch gazebo1 gazebo.launch"
+Now you see the robot in gazebo
+In order to launch test:
+- Open the new terminal
+- Print "cd"your workspace"/src/"
+- Print "catkin make"
+- Print "source devel/setup.bash"
+- Print "roslaunch gazebo1 testik.launch "
+Now there is written Wrong position becouse we did not move link
+Let's move link and check again:
+- Open the new terminal
+- Print "cd"your workspace"/src/"
+- Print "catkin make"
+- Print "source devel/setup.bash"
+- Print "rosrun gazebo1 publer.py"
+Now we see link chenged position 
+- Print "roslaunch gazebo1 testik.launch "
+Now there is written Joint is located right
 
 

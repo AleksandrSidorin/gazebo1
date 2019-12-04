@@ -18,10 +18,10 @@ def talker():
     i=0
     while not rospy.is_shutdown():
      
-        position1 = math.sin(i/20.)*2.5
-        position2 = math.sin(i/20)
-        position3 = -math.sin(i/30.)
-        position4 = -math.sin(i/30.)*2
+        position1 = 0#math.sin(i/20.)*2.5
+        position2 = 0#math.sin(i/20)
+        position3 = 0#-math.sin(i/30.)
+        position4 = 0#-math.sin(i/30.)*2
 
         #rospy.loginfo(position1)
         
