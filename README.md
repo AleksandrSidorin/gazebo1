@@ -128,6 +128,7 @@ In order to check:
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
+
 Now you see the robot in gazebo
 In order to launch test:
 - Open the new terminal
