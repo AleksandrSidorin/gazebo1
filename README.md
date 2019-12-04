@@ -11,7 +11,7 @@ Aims:
 
 In order to launch my robot Manipulator:
 - Open the terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
@@ -31,13 +31,13 @@ Aims:
 
 In order to launch and move my robot Manipulator:
 - Open the terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
 You should see the Robot in Gazebo, next steps:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptmove.py"
 
@@ -61,18 +61,18 @@ Aims:
 
 In order to launch my robot Manipulator and get pictures:
 - Open the terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "roslaunch gazebo1 gazebo.launch"
 You should see the Robot in Gazebo, next steps:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptmovecamera.py"
 Now link with the camera is moving, next steps:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "source devel/setup.bash"
 - Print "rosrun gazebo1 scriptakepic.py"
 
@@ -95,7 +95,7 @@ Aims:
 
 In order to launch Unit test:
 - Open the terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "git clone https://github.com/AleksandrSidorin/Gazedo1"
 - Print "catkin_make"
 - Print "cd gazebo1/unit_test/"
@@ -103,7 +103,7 @@ In order to launch Unit test:
 Now there is written OK (Test Done)
 In order to launch Integ test:
 - Open the new terminal
-- Print "cd"your workspace"/src/
+- Print "cd"your workspace"/src/"
 - Print "catkin make"
 - Print "source devel/setup.bash"
 - Print "roslaunch gazebo1 testik.launch "
@@ -111,8 +111,6 @@ In order to launch Integ test:
 
 Now there is written which links done test and which not
 
-Link to the video on YouTube:
-https://youtu.be/ghjpqJtXvy0
 
 AS 5 FRP
 Last home work
