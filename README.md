@@ -135,6 +135,7 @@ In order to launch test:
 - Print "catkin make"
 - Print "source devel/setup.bash"
 - Print "roslaunch gazebo1 testik.launch "
+
 Now there is written Wrong position becouse we did not move link
 Let's move link and check again:
 - Open the new terminal
